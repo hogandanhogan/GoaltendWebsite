@@ -647,7 +647,10 @@ html {
 }
 
 .legal-text a {
-    color: #4facfe;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     text-decoration: none;
     font-weight: 500;
 }
