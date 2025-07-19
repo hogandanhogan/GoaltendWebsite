@@ -1,0 +1,87 @@
+Assets Needed for Goals App Marketing Website
+
+This folder should contain the following images:
+
+REQUIRED IMAGES:
+================
+
+1. app-icon.png (512x512px)
+   - The Goals app icon with rounded corners
+   - High resolution for retina displays
+
+2. hero-screenshot.png (1170x2532px)
+   - Main app screenshot showing the home screen
+   - Should highlight progress rings and achievement cards
+   - iPhone 14 Pro resolution recommended
+
+3. app-store-badge.png
+   - Official Apple App Store download badge
+   - Available from Apple's App Store Marketing Guidelines
+   - Use the "Download on the App Store" version
+
+4. step-1.png (600x400px)
+   - Screenshot showing Apple Health connection
+   - Could show the health permissions dialog
+   - Or the app's health data integration
+
+5. step-2.png (600x400px)
+   - Screenshot showing discovered achievements
+   - Display of historical goals that were reached
+   - Highlight the achievement cards with gradients
+
+6. step-3.png (600x400px)
+   - Screenshot showing goal creation interface
+   - The create/edit goal screen
+   - Show the different goal type options
+
+7. download-phones.png (800x600px)
+   - Multiple iPhone mockups showing different app screens
+   - Should show the app in action
+   - Professional phone mockups with shadows
+
+OPTIONAL IMAGES:
+================
+
+8. testimonial-avatars/ (folder)
+   - User profile pictures for testimonials
+   - 64x64px circular images
+   - Can use stock photos or generated avatars
+
+9. feature-icons/ (folder)
+   - Custom icons for feature cards
+   - 128x128px PNG files
+   - Currently using emoji, but custom icons would be better
+
+10. social-preview.png (1200x630px)
+    - Open Graph image for social media sharing
+    - Should show app logo and key benefit
+    - Used when sharing the website on social platforms
+
+IMAGE OPTIMIZATION:
+==================
+
+For best performance, optimize all images:
+- Use WebP format where supported
+- Compress PNG files (tinypng.com)
+- Provide 2x retina versions
+- Use appropriate image dimensions
+
+CREATING MOCKUPS:
+================
+
+For phone mockups, you can use:
+- Figma with device mockup plugins
+- Sketch with mockup libraries
+- Online tools like Mockuphone.com
+- Professional mockup resources from UI8 or Creative Market
+
+APPLE GUIDELINES:
+================
+
+When using Apple-related imagery:
+- Follow Apple's Human Interface Guidelines
+- Use official App Store badges from Apple
+- Ensure screenshots represent actual app functionality
+- Maintain Apple's design aesthetic
+
+Once you have these images, replace this file with the actual image files.
