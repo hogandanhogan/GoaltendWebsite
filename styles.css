@@ -533,6 +533,20 @@ p {
     .step {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 1rem;
+    }
+    
+    .step:has(.step-image) {
+        grid-template-columns: 1fr;
+    }
+    
+    .step-image {
+        display: none;
+    }
+    
+    .step-number {
+        order: -1;
+        margin: 0 auto 1rem auto;
     }
     
     .step.reverse {
