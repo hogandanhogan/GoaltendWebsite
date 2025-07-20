@@ -49,12 +49,56 @@ p {
     margin-bottom: 1rem;
 }
 
-/* Gradient Text */
-.gradient-text {
-    background: linear-gradient(135deg, #ff5050 0%, #9333ea 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+/* Gradient Text - Maximum Dark Mode Extension Compatibility */
+.gradient-text,
+.gradient-text[data-no-dark-mode],
+[data-gradient-text],
+*[data-preserve-gradient] {
+    /* Primary gradient with maximum specificity */
+    background: linear-gradient(135deg, #ff5050 0%, #9333ea 100%) !important;
+    background-image: linear-gradient(135deg, #ff5050 0%, #9333ea 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    
+    /* Dark mode extension resistance */
+    color-scheme: light !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+    
+    /* Prevent common dark mode overrides */
+    color: transparent !important;
+    text-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+    
+    /* CSS custom properties as fallback */
+    --text-gradient: linear-gradient(135deg, #ff5050 0%, #9333ea 100%);
+    --gradient-start: #ff5050;
+    --gradient-end: #9333ea;
+    
+    /* Force isolation from parent styles */
+    isolation: isolate;
+    contain: style;
+}
+
+/* Extra specificity for stubborn extensions */
+html .gradient-text,
+body .gradient-text,
+html body .gradient-text {
+    background: linear-gradient(135deg, #ff5050 0%, #9333ea 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+/* Forced colors mode support (Windows High Contrast) */
+@media (forced-colors: active) {
+    .gradient-text {
+        -webkit-text-fill-color: revert !important;
+        color: revert !important;
+        background: none !important;
+    }
 }
 
 /* Navigation */
