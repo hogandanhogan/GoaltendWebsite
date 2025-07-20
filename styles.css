@@ -812,7 +812,6 @@ html {
 /* View Image Button */
 .view-image-btn {
     display: none;
-    background: linear-gradient(135deg, #ff5050 0%, #9333ea 100%);
     color: white;
     border: none;
     padding: 12px 24px;
