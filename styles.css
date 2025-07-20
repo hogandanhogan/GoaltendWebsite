@@ -585,6 +585,11 @@ html body .gradient-text {
     }
     
     .step-image {
+        display: block;
+        text-align: center;
+    }
+    
+    .step-image img {
         display: none;
     }
     
@@ -715,4 +720,143 @@ html {
 
 .legal-text a:hover {
     text-decoration: underline;
+}
+
+/* Image Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.modal-content img {
+    max-width: 100%;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+    background: rgba(0, 0, 0, 0.5);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.close:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.modal-caption {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+/* Step Image Enhancements */
+.step-screenshot, .download-screenshot {
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.step-screenshot:hover, .download-screenshot:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* View Image Button */
+.view-image-btn {
+    display: none;
+    background: linear-gradient(135deg, #ff5050 0%, #9333ea 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.view-image-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 80, 80, 0.3);
+}
+
+/* Mobile Modal Styles */
+@media (max-width: 768px) {
+    .view-image-btn {
+        display: inline-block;
+    }
+    
+    .download-image {
+        text-align: center;
+    }
+    
+    .download-image img {
+        max-width: 80%;
+    }
+    
+    .modal-content {
+        width: 95%;
+        max-height: 95vh;
+        margin: 10px auto;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .modal-content img {
+        max-height: 75vh;
+    }
+    
+    .close {
+        top: -45px;
+        right: 5px;
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+    }
+    
+    .modal-caption {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
 }
