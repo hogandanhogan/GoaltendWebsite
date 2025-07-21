@@ -811,8 +811,8 @@ html {
 
 /* View Image Button */
 .view-image-btn {
-    display: none;
-    color: white;
+    display: inline-block;
+    color: white !important;
     border: none;
     padding: 12px 24px;
     border-radius: 25px;
@@ -821,6 +821,9 @@ html {
     cursor: pointer;
     margin-top: 0.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    -webkit-text-fill-color: white !important;
+    background-clip: border-box !important;
+    -webkit-background-clip: border-box !important;
 }
 
 .view-image-btn:hover {
