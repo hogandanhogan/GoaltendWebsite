@@ -811,7 +811,7 @@ html {
 
 /* View Image Button */
 .view-image-btn {
-    display: inline-block;
+    display: none;
     color: white !important;
     border: none;
     padding: 12px 24px;
